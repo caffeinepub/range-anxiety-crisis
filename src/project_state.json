@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Prototype a cost-constrained, scalable solution to reduce EV range anxiety (without increasing battery capacity) and deliver a demo website prototype with rich animations/graphics plus a 5-minute executive presentation.",
+  "architectural_notes": [
+    "Prototype should be a web-based demo emphasizing animated UX (vehicles moving, charging interaction) to communicate solution quickly within constraints.",
+    "Scope change: remove car animations and remove bus + charging station elements from the animated UX scenes."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-synthesize-the-provided-case-inputs-into-a-clear-defensible-set-of-conclusions-about-the-root-causes-of-ev-range-anxiety-explicitly-grounded-in-the-provided-customer-feedback-stranding-risk-estimate-divergence-long-trip-uncertainty-and-the-representative-vehicle-parameters-40-kwh-300-km-claimed-45-min-fast-charge-10-80-6h-home-charge-mid-range-present-the-analysis-in-english-as-concise-insights-and-hypotheses-suitable-for-executives",
+      "title": "Synthesize the provided case inputs into a clear, defensible set of conclusions about the root causes of EV range anxiety, explicitly grounded in the provided customer feedback (stranding risk, estimate divergence, long-trip uncertainty) and the representative vehicle parameters (40 kWh, 300 km claimed, 45 min fast charge 10–80%, 6h home charge, mid-range). Present the analysis in English as concise insights and hypotheses suitable for executives.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-and-present-a-practical-scalable-solution-concept-to-materially-reduce-range-anxiety-without-increasing-battery-capacity-structured-as-a-bundle-of-software-first-features-compatible-with-existing-vehicle-architecture-and-within-15-000-vehicle-the-solution-must-be-demonstrable-in-the-prototype-and-include-1-range-estimate-with-uncertainty-bands-and-calibration-2-trip-planning-with-charging-stop-confidence-and-3-proactive-driver-guidance-to-reduce-variance-e-g-speed-ac-coaching-and-contingency-recommendations",
+      "title": "Define and present a practical, scalable solution concept to materially reduce range anxiety without increasing battery capacity, structured as a bundle of software-first features compatible with existing vehicle architecture and within ₹15,000/vehicle. The solution must be demonstrable in the prototype and include: (1) range estimate with uncertainty bands and calibration, (2) trip planning with charging stop confidence, and (3) proactive driver guidance to reduce variance (e.g., speed/AC coaching) and contingency recommendations.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-rich-animated-react-website-prototype-that-demonstrates-the-solution-end-to-end-with-cool-graphics-images-and-a-lot-of-animations-including-fast-moving-cars-and-buses-and-an-ev-that-connects-to-a-charger-and-then-starts-moving-use-animations-throughout-the-landing-and-demo-flows-while-keeping-the-ui-readable-and-performant",
+      "title": "Build a rich, animated React website prototype that demonstrates the solution end-to-end with “cool graphics, images” and “a lot of animations,” including fast-moving cars and buses and an EV that connects to a charger and then starts moving. Use animations throughout the landing and demo flows while keeping the UI readable and performant.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-interactive-range-confidence-demo-in-the-website-that-lets-the-user-simulate-a-trip-and-see-how-the-proposed-system-reduces-anxiety-the-demo-should-accept-inputs-trip-distance-outside-temperature-driving-style-payload-occupancy-ac-usage-and-output-a-predicted-range-with-uncertainty-band-b-confidence-score-for-reaching-destination-c-recommended-charging-stops-and-buffers-and-d-coaching-suggestions-use-a-transparent-deterministic-calculation-model-suitable-for-a-prototype-no-external-apis",
+      "title": "Implement an interactive “Range Confidence Demo” in the website that lets the user simulate a trip and see how the proposed system reduces anxiety. The demo should accept inputs (trip distance, outside temperature, driving style, payload/occupancy, AC usage) and output: (a) predicted range with uncertainty band, (b) confidence score for reaching destination, (c) recommended charging stops and buffers, and (d) coaching suggestions. Use a transparent, deterministic calculation model suitable for a prototype (no external APIs).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-built-in-5-minute-executive-presentation-mode-within-the-website-that-can-be-clicked-through-like-slides-slides-must-cover-problem-framing-key-insights-solution-overview-prototype-walkthrough-operational-feasibility-12-months-compatibility-cost-constraint-15-000-vehicle-expected-impact-metrics-risks-assumptions-and-a-short-what-if-readiness-slide",
+      "title": "Add a built-in “5-minute executive presentation” mode within the website that can be clicked through like slides. Slides must cover: problem framing, key insights, solution overview, prototype walkthrough, operational feasibility (12 months + compatibility), cost constraint (₹15,000/vehicle), expected impact metrics, risks/assumptions, and a short 'what-if' readiness slide.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-provide-a-what-if-defensibility-section-that-anticipates-panel-probing-by-offering-selectable-scenarios-e-g-charger-offline-traffic-jam-cold-night-highway-inaccurate-charger-availability-aggressive-driving-and-shows-how-the-system-responds-updated-uncertainty-contingency-plan-safety-buffer-messaging",
+      "title": "Provide a “What‑If & Defensibility” section that anticipates panel probing by offering selectable scenarios (e.g., charger offline, traffic jam, cold night highway, inaccurate charger availability, aggressive driving) and shows how the system responds (updated uncertainty, contingency plan, safety buffer messaging).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-establish-a-coherent-visual-theme-suitable-for-an-ev-mobility-transport-case-study-demo-applied-consistently-across-pages-and-components-typography-colors-spacing-motion-style-avoid-a-generic-look-use-a-distinct-style-that-complements-the-animated-road-charging-visuals-do-not-default-to-blue-purple-unless-required",
+      "title": "Establish a coherent visual theme suitable for an EV mobility/transport case study demo, applied consistently across pages and components (typography, colors, spacing, motion style). Avoid a generic look; use a distinct style that complements the animated road/charging visuals (do not default to blue/purple unless required).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-image-assets-for-the-animated-scenes-cars-bus-ev-charger-road-city-backdrop-icons-and-render-them-from-the-frontend-as-static-files-do-not-serve-images-through-the-backend-store-generated-assets-under-frontend-public-assets-generated-and-reference-them-in-the-animated-components",
+      "title": "Add generated static image assets for the animated scenes (cars, bus, EV + charger, road/city backdrop, icons) and render them from the frontend as static files (do not serve images through the backend). Store generated assets under frontend/public/assets/generated and reference them in the animated components.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-animated-background-traffic-elements-from-the-landing-hero-including-the-car-animation-and-the-bus-element-animation",
+      "title": "Remove the animated background traffic elements from the landing hero, including the car animation and the bus element/animation.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-charging-station-element-and-any-associated-charging-sequence-ui-animation-from-the-landing-hero-experience",
+      "title": "Remove the charging station element (and any associated charging sequence UI/animation) from the landing hero experience.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Analyze provided case inputs and synthesize reasonable conclusions/insights about causes of range anxiety and levers to reduce it under given constraints.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Build a demonstrable digital prototype (website) showcasing the proposed solution with cool graphics and lots of animations (e.g., fast-moving cars/buses, EV connecting to charger then driving).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Create a 5-minute executive presentation summarizing approach, validation, and expected impact for the range-anxiety solution.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Create a lightweight Motoko backend to store and serve the prototype’s structured content (insights, assumptions, scenarios, slide text) and optionally collect anonymous demo interactions (e.g., selected scenarios, inputs) for “validation” storytelling in the presentation. Ensure it works without requiring external databases.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Remove car animations from the prototype, and remove the bus and charging station elements (including their animations/visuals) from the demo experience.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Range Anxiety Crisis",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

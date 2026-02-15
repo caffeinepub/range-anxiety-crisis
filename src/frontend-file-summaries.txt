@@ -1,0 +1,23 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates all sections (hero, problem, insights, solution, demo, impact, what-if, presentation) with theme provider and toast notifications.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching insights, solution features, range scenarios, interaction stats from backend and recording demo interactions.",
+  "frontend/src/content/fallbackContent.ts": "Fallback content with 6+ insights mapped to pain points, solution features, and what-if scenarios, all referencing vehicle constraints and parameters.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with smooth scroll links to all major sections and mobile-responsive menu.",
+  "frontend/src/components/Footer.tsx": "Footer with branding, quick links, social icons, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/AnimatedRoadHero.tsx": "Landing hero section with road backdrop and centered content promoting the Range Anxiety solution, featuring navigation buttons to problem and demo sections.",
+  "frontend/src/sections/ProblemSection.tsx": "Problem statement section presenting three pain points (stranding, estimate divergence, long-trip uncertainty) with vehicle parameters and constraints.",
+  "frontend/src/sections/InsightsSection.tsx": "Insights section displaying 6+ data-driven conclusions with backend integration and fallback content.",
+  "frontend/src/sections/SolutionSection.tsx": "Solution section presenting three software modules with tabbed interface, impact estimates, and constraint compliance notes.",
+  "frontend/src/sections/RangeConfidenceDemoSection.tsx": "Interactive demo with 5+ inputs (distance, temperature, driving style, payload, AC) showing uncertainty bands, confidence score, and recommendations.",
+  "frontend/src/sections/ImpactCostSection.tsx": "Impact metrics, cost breakdown (≤₹15,000), timeline (≤12 months), and risk/assumption analysis.",
+  "frontend/src/sections/WhatIfDefensibilitySection.tsx": "What-if scenarios section with 6 selectable edge cases showing system response, updated confidence, and conservative buffer strategies.",
+  "frontend/src/components/UncertaintyBandChart.tsx": "Visual component displaying range uncertainty band with worst-case, predicted, best-case markers and trip distance indicator.",
+  "frontend/src/utils/rangeModel.ts": "Deterministic range confidence calculation model considering temperature, driving style, payload, AC usage with transparent assumptions.",
+  "frontend/src/utils/scenarioEngine.ts": "Scenario-to-parameter mapping engine applying what-if scenarios to range model and generating updated recommendations.",
+  "frontend/src/presentation/slides.ts": "Presentation slide content (10 slides) covering problem, insights, solution, demo, impact, feasibility, cost, risks, what-if, and summary.",
+  "frontend/src/presentation/PresentationMode.tsx": "Full-screen presentation mode with slide navigation, visual embeds, and preview grid for 5-minute executive deck.",
+  "frontend/src/components/animations/motionTokens.ts": "Shared motion design tokens (durations, easing, stagger) for consistent animation style across components.",
+  "frontend/src/index.css": "Global styles with teal/cyan EV mobility theme using OKLCH color system, supporting light and dark modes with distinct palette.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended theme tokens, Inter font family, and custom animation keyframes.",
+  "frontend/index.html": "HTML entry point with updated title and meta description for Range Confidence prototype."
+}

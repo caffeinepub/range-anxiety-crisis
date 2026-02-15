@@ -1,2 +1,3 @@
-# range-anxiety-crisis
-Exported from Caffeine project: Range Anxiety Crisis
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

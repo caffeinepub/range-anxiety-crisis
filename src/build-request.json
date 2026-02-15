@@ -1,0 +1,56 @@
+{
+  "kind": "build_request",
+  "title": "Remove car/bus/charging-station animations and visuals from the hero scene",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "text": "Remove the animated background traffic elements from the landing hero, including the car animation and the bus element/animation.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "remove the car animations  and the bus and charging station also"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The landing hero no longer renders /assets/generated/car-sprite.dim_512x256.png.",
+        "The landing hero no longer renders /assets/generated/bus-sprite.dim_768x320.png.",
+        "No CSS keyframes/classes remain that are only used for the removed car/bus animations (e.g., slide-right)"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Remove the charging station element (and any associated charging sequence UI/animation) from the landing hero experience.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "remove the car animations  and the bus and charging station also"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The landing hero no longer renders /assets/generated/charger-station.dim_512x512.png.",
+        "The landing hero no longer shows the 'Charging...' label or the charging progress animation.",
+        "Any now-unused React state/effects/refs related only to the removed charging/driving sequence are removed (e.g., animationPhase/canvasRef/useEffect), and the component compiles cleanly with no unused-variable lint/type errors"
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui",
+    "Do not add external APIs or services"
+  ],
+  "nonGoals": [
+    "Do not change the Range Confidence Demo calculations or UI behavior outside of removing the specified hero visuals/animations",
+    "Do not change backend canister logic or data models",
+    "Do not delete generated image files from the repository; only remove their usage from the UI"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

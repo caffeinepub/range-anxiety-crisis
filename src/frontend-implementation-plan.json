@@ -1,0 +1,39 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove background traffic and charging-station visuals from the landing hero",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "summary": "Remove the car and bus background traffic elements/animations from the landing hero and delete any now-unused CSS keyframes/classes.",
+      "acceptanceCriteria": [
+        "The landing hero no longer renders /assets/generated/car-sprite.dim_512x256.png.",
+        "The landing hero no longer renders /assets/generated/bus-sprite.dim_768x320.png.",
+        "No CSS keyframes/classes remain that are only used for the removed car/bus animations (e.g., slide-right)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnimatedRoadHero.tsx",
+          "operation": "modify",
+          "description": "Remove the background traffic <img> elements that reference /assets/generated/car-sprite.dim_512x256.png and /assets/generated/bus-sprite.dim_768x320.png, and delete the now-unused slide-right animation usage and associated @keyframes from the component-scoped <style> block."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Remove the charging station element and any charging/driving sequence UI/animation logic from the landing hero.",
+      "acceptanceCriteria": [
+        "The landing hero no longer renders /assets/generated/charger-station.dim_512x512.png.",
+        "The landing hero no longer shows the 'Charging...' label or the charging progress animation.",
+        "Any now-unused React state/effects/refs related only to the removed charging/driving sequence are removed (e.g., animationPhase/canvasRef/useEffect), and the component compiles cleanly with no unused-variable lint/type errors"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnimatedRoadHero.tsx",
+          "operation": "modify",
+          "description": "Remove the charger station <img> that references /assets/generated/charger-station.dim_512x512.png, remove the charging progress UI (including the 'Charging...' label) and any related animation classes/keyframes (e.g., charge). Delete any now-unused React state/effects/refs/imports used only for the charging/driving sequence (e.g., animationPhase, canvasRef, useEffect/useRef/useState if no longer needed) so the component compiles without unused-variable errors."
+        }
+      ]
+    }
+  ]
+}
